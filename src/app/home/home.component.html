@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EV Power Station</title>
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/f1d2adf68d.js" crossorigin="anonymous"></script>
     <!--link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" /-->
-   
-  </head>
-  <body>
-    
-    <header class="text-gray-600 body-font">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="height:75px;">
+        <div class="container-fluid">
+            <span class="navbar-brand"><i class="fa-regular fa-plug"></i></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          
+        </span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link">Contact</a>
+                    </li>
+
+
+                </ul>
+
+
+                <button class="btn btn-outline-info" type="submit" style="margin-right:20px;">Register</button>
+                <button class="btn btn-outline-info" type="submit">Login</button>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--<header class="text-gray-600 body-font">
       <div
         class="
           container
@@ -93,7 +125,7 @@
             md:mt-0
           "
         >
-          <!--svg
+          svg
             fill="none"
             stroke="currentColor"
             stroke-linecap="round"
@@ -103,7 +135,7 @@
             viewBox="0 0 24 24"
           >
             <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg-->
+          </svg
           <a href="login">Login</a>
         </button>
         <button  id= "space"
@@ -122,7 +154,7 @@
             mt-4
             md:mt-0
           "        >
-          <!--svg
+          svg
             fill="none"
             stroke="currentColor"
             stroke-linecap="round"
@@ -132,174 +164,138 @@
             viewBox="0 0 24 24"
           >
             <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg-->
+          </svg
           <a href="/signup">Register</a>
         </button>
       </div>
-    </header>
+    </header>-->
 
-  <div  class="section">
+    <div class="section">
 
         <div class="video-container">
-            <div class="color-overlay"></div>
-            <video  autoplay loop muted>
+
+            <video autoplay loop muted>
                 <source src="../assets/image/Demo.mp4"  type="video/mp4">
+                <div class="overlay">
+                  <h1>Triple Plug Share</h1>
+                  <p>Locate charging station made easy.</p>
+              </div>
             </video>
         </div>
     </div>
-    
 
-    <section class="text-gray-400 body-font bg-gray-900">
 
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-wrap w-full mb-20">
-          <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+    <section class="text-gray-100 body-font bg-dark">
 
-            <h1
-              class="
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap w-full mb-20">
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+
+                    <h1 class="
                 sm:text-3xl
                 text-2xl
                 font-medium
                 title-font
                 mb-2
                 text-white
-              "
-            >
-              EV Charging 
-            </h1>
+              ">
+                        EV Charging
+                    </h1>
 
-            <div class="h-1 w-40 bg-green-500 rounded"></div>
-          </div>
-           
-          <p
-            class="
+                    <div class="h-1 w-40 bg-green-500 rounded"></div>
+                </div>
+
+                <p class="
               lg:w-1/2
                text-xl
               w-full
               font-medium
               leading-relaxed
-              text-gray-400 text-opacity-90
-            "
-          >
-           An electric vehicle charging station is equipment that connects an electric vehicle (EV) to a source of electricity to recharge electric cars, neighborhood electric vehicles and plug-in hybrids. Some charging stations have advanced features such as smart metering, cellular capability and network connectivity, while others are more basic.
-          </p>
+              text-white
+            ">
+                    An electric vehicle charging station is equipment that connects an electric vehicle (EV) to a source of electricity to recharge electric cars, neighborhood electric vehicles and plug-in hybrids. Some charging stations have advanced features such as smart
+                    metering, cellular capability and network connectivity, while others are more basic.
+                </p>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-green-200 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="../assets/image/global-electric-vehicles-green-car.jpg" alt="content" />
+                        <h3 class="
+                  tracking-widest
+                  text-green-500 text-s
+                  font-medium
+                  title-font
+                " style="font-size: 15px;">
+                            Better for the environment
+                        </h3>
+
+                        <p class="leading-relaxed text-base text-gray-900">
+                            By choosing to drive an EV you are helping to reduce harmful air pollution from exhaust emissions. An EV has zero exhaust emissions,
+                        </p>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-green-200 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="../assets/image/gas-vs-electric.png" alt="content" />
+                        <h3 class="
+                  tracking-widest
+                  text-green-500 text-s
+                  font-medium
+                  title-font
+                " style="font-size: 15px;">
+                            Cheaper to maintain
+                        </h3>
+
+                        <p class="leading-relaxed text-base text-gray-900">
+                            The cost of the electricity required to charge an EV is around 40% less than the cost to use petrol for a similar sized vehicle driving the same distance1.
+                        </p>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-green-200 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="../assets/image/New-GK-2018-Size-2.png" alt="content" />
+                        <h3 class="
+                  tracking-widest
+                  text-green-500 text-s
+                  font-medium
+                  title-font
+                " style="font-size: 15px;">
+                            Smooth driving experience
+                        </h3>
+
+                        <p class="leading-relaxed text-base text-gray-900">
+                            The only noise an electric motor makes is a faint whirring sound, so this means comfort is big inside the cabin. Many EVs are designed to be comfortable around town.
+                        </p>
+                    </div>
+                </div>
+                <div class="xl:w-1/4 md:w-1/2 p-4">
+                    <div class="bg-green-200 p-6 rounded-lg">
+                        <img class="h-40 rounded w-full object-cover object-center mb-6" src="..assets/image/TaxSavings-1030x686.png" alt="content" />
+                        <h2 class="
+                  tracking-widest
+                  text-green-500 text-s
+                  font-medium
+                  title-font
+                " style="font-size: 15px;">
+                            Tax incentive and government grant
+                        </h2>
+
+                        <p class="leading-relaxed text-base text-gray-900">
+                            Zero emission vehicles that cost less than £40,000 are exempt from paying road tax. Cars over that price cost £340 per year in road tax for the first five years of ownership, and after that they also become exempt.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="flex flex-wrap -m-4">
-          <div class="xl:w-1/4 md:w-1/2 p-4">
-            <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-              <img
-                class="h-40 rounded w-full object-cover object-center mb-6"
-                src="../assets/image/global-electric-vehicles-green-car.jpg"
-                alt="content"
-              />
-              <h3
-                class="
-                  tracking-widest
-                  text-green-400 text-xs
-                  font-medium
-                  title-font
-                "
-                style="font-size: 15px;"
-              >
-                Better for the environment 
-              </h3>
-              
-              <p class="leading-relaxed text-base">
-                By choosing to drive an EV you are helping to reduce harmful air pollution from exhaust emissions.
-                 An EV has zero exhaust emissions,
-              </p>
-            </div>
-          </div>
-          <div class="xl:w-1/4 md:w-1/2 p-4">
-            <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-              <img
-                class="h-40 rounded w-full object-cover object-center mb-6"
-                src="../assets/image/gas-vs-electric.png"
-                alt="content"
-              />
-              <h3
-                class="
-                  tracking-widest
-                  text-green-400 text-xs
-                  font-medium
-                  title-font
-                "
-                style="font-size: 15px;"
-              >
-              Cheaper to maintain
-              </h3>
-              
-              <p class="leading-relaxed text-base">
-                The cost of the electricity required 
-                to charge an EV is around 40% less than the cost to use petrol for a similar sized vehicle driving the same distance1.
-              </p>
-            </div>
-          </div>
-          <div class="xl:w-1/4 md:w-1/2 p-4">
-            <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-              <img
-                class="h-40 rounded w-full object-cover object-center mb-6"
-                src="../assets/image/New-GK-2018-Size-2.png"
-                alt="content"
-              />
-              <h3
-                class="
-                  tracking-widest
-                  text-green-400 text-xs
-                  font-medium
-                  title-font
-                "
-                style="font-size: 15px;"
-              >
-              Smooth driving experience
-              </h3>
-              
-              <p class="leading-relaxed text-base">
-                The only noise an electric motor makes is a faint whirring sound, 
-                so this means comfort is big inside the cabin. 
-                Many EVs are designed to be comfortable around town.
-              </p>
-            </div>
-          </div>
-          <div class="xl:w-1/4 md:w-1/2 p-4">
-            <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-              <img
-                class="h-40 rounded w-full object-cover object-center mb-6"
-                src="..assets/image/TaxSavings-1030x686.png"
-                alt="content"
-              />
-              <h2
-                class="
-                  tracking-widest
-                  text-green-400 text-xs
-                  font-medium
-                  title-font
-                "
-                style="font-size: 15px;"
-              >
-              Tax incentive and government grant
-              </h2>
-              
-              <p class="leading-relaxed text-base">
-                Zero emission vehicles that cost less than £40,000 
-                are exempt from paying road tax. Cars over that price 
-                cost £340 per year in road tax for the first five years
-                 of ownership,
-                 and after that they also become exempt.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto flex flex-wrap">
-        <div class="flex flex-wrap w-full">
-          <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
-            <div class="flex relative pb-12">
-              <div
-                class="
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="flex flex-wrap w-full">
+                <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
+                    <div class="flex relative pb-12">
+                        <div class="
                   h-full
                   w-10
                   absolute
@@ -307,12 +303,10 @@
                   flex
                   items-center
                   justify-center
-                "
-              >
-                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div
-                class="
+                ">
+                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div class="
                   flex-shrink-0
                   w-10
                   h-10
@@ -324,48 +318,36 @@
                   text-white
                   relative
                   z-10
-                "
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
+                ">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                 </svg>
-              </div>
-              <div class="flex-grow pl-4">
-                <h2
-                  class="
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2 class="
                     font-medium
                     title-font
                     text-sm text-gray-900
                     mb-1
                     tracking-wider
-                  "
-                >
-                STEP 1 
-                <h2 class="
+                  ">
+                                STEP 1
+                                <h2 class="
                 font-medium
                 title-font
                 text-sm text-gray-900
                 mb-1
                 tracking-wider
-              ">Navigation</h2> 
-              </h2>
-              
-            <p class="leading-relaxed text-base">
-             know about your current location and search for availabale station on your path .
-            </p>
-              </div>
-            </div>
-            <div class="flex relative pb-12">
-              <div
-                class="
+              ">Navigation</h2>
+                            </h2>
+
+                            <p class="leading-relaxed text-base ">
+                                know about your current location and search for availabale station on your path .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex relative pb-12">
+                        <div class="
                   h-full
                   w-10
                   absolute
@@ -373,12 +355,10 @@
                   flex
                   items-center
                   justify-center
-                "
-              >
-                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div
-                class="
+                ">
+                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div class="
                   flex-shrink-0
                   w-10
                   h-10
@@ -390,49 +370,37 @@
                   text-white
                   relative
                   z-10
-                "
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
+                ">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                   <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                 </svg>
-              </div>
-              <div class="flex-grow pl-4">
-                <h2
-                  class="
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2 class="
                     font-medium
                     title-font
                     text-sm text-gray-900
                     mb-1
                     tracking-wider
-                  "
-                >
-                STEP 2 
-                <h2 class="
+                  ">
+                                STEP 2
+                                <h2 class="
                 font-medium
                 title-font
                 text-sm text-gray-900
                 mb-1
                 tracking-wider
               ">Fill in </h2>
-              </h2>
-               
-               
-               <p class="leading-relaxed text-base">
-                Get to the station and plug your charger in .
-               </p>
-              </div>
-            </div>
-            <div class="flex relative pb-12">
-              <div
-                class="
+                            </h2>
+
+
+                            <p class="leading-relaxed text-base">
+                                Get to the station and plug your charger in .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex relative pb-12">
+                        <div class="
                   h-full
                   w-10
                   absolute
@@ -440,12 +408,10 @@
                   flex
                   items-center
                   justify-center
-                "
-              >
-                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div
-                class="
+                ">
+                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div class="
                   flex-shrink-0
                   w-10
                   h-10
@@ -457,48 +423,36 @@
                   text-white
                   relative
                   z-10
-                "
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
+                ">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                   <circle cx="12" cy="5" r="3"></circle>
                   <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
                 </svg>
-              </div>
-              <div class="flex-grow pl-4">
-                <h2
-                  class="
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2 class="
                     font-medium
                     title-font
                     text-sm text-gray-900
                     mb-1
                     tracking-wider
-                  "
-                >
-                STEP 3 
-                <h2 class="
+                  ">
+                                STEP 3
+                                <h2 class="
                 font-medium
                 title-font
                 text-sm text-gray-900
                 mb-1
                 tracking-wider
-              ">Chill</h2> 
-            </h2>
-              <p class="leading-relaxed text-base">
-                grab your cofee , streach your legs . pay the bill that it , it  is as easy as your petrol station .
-              </p>
-              </div>
-            </div>
-            <div class="flex relative pb-12">
-              <div
-                class="
+              ">Chill</h2>
+                            </h2>
+                            <p class="leading-relaxed text-base">
+                                grab your cofee , streach your legs . pay the bill that it , it is as easy as your petrol station .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex relative pb-12">
+                        <div class="
                   h-full
                   w-10
                   absolute
@@ -506,12 +460,10 @@
                   flex
                   items-center
                   justify-center
-                "
-              >
-                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div
-                class="
+                ">
+                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div class="
                   flex-shrink-0
                   w-10
                   h-10
@@ -523,53 +475,39 @@
                   text-white
                   relative
                   z-10
-                "
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
+                ">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                   <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
                   <circle cx="12" cy="7" r="4"></circle>
                 </svg>
-              </div>
-              <div class="flex-grow pl-4">
-                <h2
-                  class="
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2 class="
                     font-medium
                     title-font
                     text-sm text-gray-900
                     mb-1
                     tracking-wider
-                  "
-                >
-                STEP 4 
-                <h2 class="
+                  ">
+                                STEP 4
+                                <h2 class="
                 font-medium
                 title-font
                 text-sm text-gray-900
                 mb-1
                 tracking-wider
-              ">Monitor</h2> 
-              </h2>
-             
-      
-            <p class="leading-relaxed text-base">
-            
-              view charging status and get ready to go ,  
-              follow the same process after raching
-              to your battery's lower limit .
-            </p>
-              </div>
-            </div>
-            <div class="flex relative">
-              <div
-                class="
+              ">Monitor</h2>
+                            </h2>
+
+
+                            <p class="leading-relaxed text-base">
+
+                                view charging status and get ready to go , follow the same process after raching to your battery's lower limit .
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex relative">
+                        <div class="
                   flex-shrink-0
                   w-10
                   h-10
@@ -581,73 +519,48 @@
                   text-white
                   relative
                   z-10
-                "
-              >
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
+                ">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
                   <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                   <path d="M22 4L12 14.01l-3-3"></path>
                 </svg>
-              </div>
-              <div class="flex-grow pl-4">
-                <h2
-                  class="
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2 class="
                     font-medium
                     title-font
                     text-sm text-gray-900
                     mb-1
                     tracking-wider
-                  "
-                >
-                FINISH
-              </h2>
-              <p class="leading-relaxed">
-                congratulation you move  your first step towards green energy .
-              </p>
-              </div>
-            </div>
-          </div>
-          <img
-            class="
+                  ">
+                                FINISH
+                            </h2>
+                            <p class="leading-relaxed">
+                                congratulation you move your first step towards green energy .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <img class="
               lg:w-3/5
               md:w-1/2
               object-cover object-center
               rounded-lg
               md:mt-0
               mt-12
-            "
-            src="https://source.unsplash.com/1200x500/?tesla,supercar,carplug"
-            alt="step"
-          />
+            " src="https://source.unsplash.com/1200x500/?tesla,supercar,carplug" alt="step" />
+            </div>
         </div>
-      </div>
     </section>
 
     <section class="text-gray-600 body-font relative">
-       <div id="div_feedback">
-      <div class="absolute inset-0 bg-gray-300">
-        <iframe
-          width="100%"
-          height="100%"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          title="map"
-          scrolling="no"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117371.05679943635!2d79.89871232112424!3d23.175837426261996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981ae1a0fb6a97d%3A0x44020616bc43e3b9!2sJabalpur%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1633264234047!5m2!1sen!2sin"
-          style="filter: grayscale(1) contrast(1.2) opacity(0.4)"
-        ></iframe>
-      </div>
-      <div class="container px-5 py-24 mx-auto flex">
-        <div
-          class="
+        <div id="div_feedback">
+            <div class="absolute inset-0 bg-gray-300">
+                <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117371.05679943635!2d79.89871232112424!3d23.175837426261996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981ae1a0fb6a97d%3A0x44020616bc43e3b9!2sJabalpur%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1633264234047!5m2!1sen!2sin"
+                    style="filter: grayscale(1) contrast(1.2) opacity(0.4)"></iframe>
+            </div>
+            <div class="container px-5 py-24 mx-auto flex">
+                <div class="
             lg:w-1/3
             md:w-1/2
             bg-white
@@ -661,18 +574,16 @@
             relative
             z-10
             shadow-md
-          "
-        >
-          <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
-            Feedback
-          </h2>
-          <p class="leading-relaxed mb-5 text-gray-600">
-            Please give us your's beautiful feedback...
-          </p>
-          <form action="feedback.php" method="post">
-          <div class="relative mb-4">
-            <label for="email" class="leading-7 text-sm text-gray-600"
-              >Email</label
+          ">
+                    <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
+                        Feedback
+                    </h2>
+                    <p class="leading-relaxed mb-5 text-gray-600">
+                        Please give us your's beautiful feedback...
+                    </p>
+                    <form action="feedback.php" method="post">
+                        <div class="relative mb-4">
+                            <label for="email" class="leading-7 text-sm text-gray-600">Email</label
             >
             <input
               type="email"
@@ -748,7 +659,7 @@
     </div>
     </section>
 
-    <footer id="about"  class="text-gray-400 bg-gray-900 body-font">
+    <footer id="about"  class="text-gray-400 bg-dark body-font">
   <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
     <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
        <img fill="none"
